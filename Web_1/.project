@@ -28,4 +28,36 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/webapp/images/Logo.png</name>
+			<type>1</type>
+			<location>/Users/larisa/Downloads/Logo.png</location>
+		</link>
+		<link>
+			<name>src/main/webapp/images/edit.png</name>
+			<type>1</type>
+			<location>/Users/larisa/Downloads/edit.png</location>
+		</link>
+		<link>
+			<name>src/main/webapp/images/icon-edit.png</name>
+			<type>1</type>
+			<location>/Users/larisa/Downloads/writing.png</location>
+		</link>
+		<link>
+			<name>src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-3.0.1.jar</name>
+			<type>1</type>
+			<location>/Users/larisa/Downloads/jakarta.servlet.jsp.jstl-3.0.1.jar</location>
+		</link>
+		<link>
+			<name>src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar</name>
+			<type>1</type>
+			<location>/Users/larisa/Downloads/jakarta.servlet.jsp.jstl-api-3.0.0.jar</location>
+		</link>
+		<link>
+			<name>src/main/webapp/WEB-INF/lib/postgresql-42.5.4.jar</name>
+			<type>1</type>
+			<location>/Users/larisa/Downloads/postgresql-42.5.4.jar</location>
+		</link>
+	</linkedResources>
 </projectDescription>

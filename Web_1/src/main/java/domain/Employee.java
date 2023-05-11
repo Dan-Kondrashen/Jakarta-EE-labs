@@ -1,17 +1,19 @@
 package domain;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Employee {
 	
 	// Идентификатор сотрудника
 	private Long id;
 
+	// Фамилия
+	private String lastName;
+		
 	// Имя
 	private String firstName;
 
-	// Фамилия
-	private String lastName;
+	
 	 
 	// Отчество
 	private String secondName;
@@ -21,41 +23,47 @@ public class Employee {
 	 
 	// Телефон
 	private String phone;
+	
+	// Адресс
+		private String addres;
 
 	// email
 	private String email;
 	 
-	// Регион
-	private String region;
 		 
-	// Регион
-	private Date birchDay;
+	// Дата рождения
+	private Date birchday;
 	
-	// Регион
-	private String addres;
+	
 	 
 	 
-	public Employee(Long id,String firstName,String lastName,String secondName, String title
-			 ,String phone,String email,String region,Date birchDay,String addres) {
+	public Employee(Long id, String secondName,String firstName,String lastName,String title,String phone,String addres,String email,Date birchDay) {
 		 this.setId(id);
-		 this.setFirstName(firstName);
 		 this.setSecondName(secondName);
+		 this.setFirstName(firstName);
 		 this.setLastName(lastName);
 		 this.setTitle(title);
 		 this.setPhone(phone);
-		 this.setEmail(email);
-		 this.setRegion(region);
-		 this.setBirchDay(birchDay);
 		 this.setAddres(addres);
+		 this.setEmail(email);
+		 this.setBirchDay(birchDay);
+		 
+	}
+	public Employee(String secondName,String firstName,String lastName,String title,String phone,String addres,String email,Date date) {
+		 
+		 this.setSecondName(secondName);
+		 this.setFirstName(firstName);
+		 this.setLastName(lastName);
+		 this.setTitle(title);
+		 this.setPhone(phone);
+		 this.setAddres(addres);
+		 this.setEmail(email);
+		 this.setBirchDay(date);
+		 
 	}
 	public Employee() {}
 	 
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -92,17 +100,18 @@ public class Employee {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getRegion() {
-		return region;
+	public String getEmail() {
+		return email;
 	}
-	public void setRegion(String region) {
-		this.region = region;
+	public void setEmail(String email) {
+		this.email = email;
 	}
+	
 	public Date getBirchDay() {
-		return birchDay;
+		return birchday;
 	}
 	public void setBirchDay(Date birchDay) {
-		this.birchDay = birchDay;
+		this.birchday = birchDay;
 	}
 	public String getAddres() {
 		return addres;
@@ -111,9 +120,9 @@ public class Employee {
 		this.addres = addres;
 	}
 	@Override
-	public String toString(){
-		return "Работник:"+ firstName + " " + secondName + " " + lastName + " вышел на работу";
-		
+	public String toString() {
+	return "Employee {" + "Id = " + id  + ", firstName = " + firstName + ", secondName = " + secondName + ", lastName = " + lastName
+			+ ", title = " + title + ", phone = " + phone + ", email = " + email + ", birchday = " + birchday + ", addres = " + addres + "}";
 	}
 	
 	 

@@ -2,13 +2,13 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
   <servlet>
     <description></description>
-    <display-name>RoleServlet</display-name>
-    <servlet-name>RoleServlet</servlet-name>
-    <servlet-class>controller.RoleServlet</servlet-class>
+    <display-name>MainWebPage</display-name>
+    <servlet-name>MainWebPage</servlet-name>
+    <servlet-class>controller.MainWebPage</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>RoleServlet</servlet-name>
-    <url-pattern>/RoleServlet</url-pattern>
+    <servlet-name>MainWebPage</servlet-name>
+    <url-pattern>/MainWebPage</url-pattern>
   </servlet-mapping>
   <display-name>Web_1</display-name>
   <welcome-file-list>
@@ -21,12 +21,122 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>PoguServlet</display-name>
-    <servlet-name>PoguServlet</servlet-name>
-    <servlet-class>controller.PoguServlet</servlet-class>
+    <display-name>RegionServlet</display-name>
+    <servlet-name>RegionServlet</servlet-name>
+    <servlet-class>controller.RegionServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>PoguServlet</servlet-name>
-    <url-pattern>/PoguServlet</url-pattern>
+    <servlet-name>RegionServlet</servlet-name>
+    <url-pattern>/RegionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeServlet</display-name>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>controller.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>/EmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TerritoryServlet</display-name>
+    <servlet-name>TerritoryServlet</servlet-name>
+    <servlet-class>controller.TerritoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TerritoryServlet</servlet-name>
+    <url-pattern>/TerritoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmpToTerServlet</display-name>
+    <servlet-name>EmpToTerServlet</servlet-name>
+    <servlet-class>controller.EmpToTerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmpToTerServlet</servlet-name>
+    <url-pattern>/EmpToTerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditRegionSevlet</display-name>
+    <servlet-name>EditRegionSevlet</servlet-name>
+    <servlet-class>controller.EditRegionSevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditRegionSevlet</servlet-name>
+    <url-pattern>/EditRegionSevlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteRegionServlet</display-name>
+    <servlet-name>DeleteRegionServlet</servlet-name>
+    <servlet-class>controller.DeleteRegionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteRegionServlet</servlet-name>
+    <url-pattern>/DeleteRegionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditEmployeeServlet</display-name>
+    <servlet-name>EditEmployeeServlet</servlet-name>
+    <servlet-class>controller.EditEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditEmployeeServlet</servlet-name>
+    <url-pattern>/EditEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteEmployeeServlet</display-name>
+    <servlet-name>DeleteEmployeeServlet</servlet-name>
+    <servlet-class>controller.DeleteEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteEmployeeServlet</servlet-name>
+    <url-pattern>/DeleteEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditTerritoryServlet</display-name>
+    <servlet-name>EditTerritoryServlet</servlet-name>
+    <servlet-class>controller.EditTerritoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditTerritoryServlet</servlet-name>
+    <url-pattern>/EditTerritoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteTerritoryServlet</display-name>
+    <servlet-name>DeleteTerritoryServlet</servlet-name>
+    <servlet-class>controller.DeleteTerritoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTerritoryServlet</servlet-name>
+    <url-pattern>/DeleteTerritoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditEmpTerrServlet</display-name>
+    <servlet-name>EditEmpTerrServlet</servlet-name>
+    <servlet-class>controller.EditEmpTerrServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditEmpTerrServlet</servlet-name>
+    <url-pattern>/EditEmpTerrServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteEmpTerrServlet</display-name>
+    <servlet-name>DeleteEmpTerrServlet</servlet-name>
+    <servlet-class>controller.DeleteEmpTerrServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteEmpTerrServlet</servlet-name>
+    <url-pattern>/DeleteEmpTerrServlet</url-pattern>
   </servlet-mapping>
 </web-app>

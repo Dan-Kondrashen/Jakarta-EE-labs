@@ -3,8 +3,7 @@ pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css"
-href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 <meta http-equiv="Content-Type" content="text/html"
 charset="UTF-8">
 <title>Главная страница</title>
@@ -14,8 +13,10 @@ charset="UTF-8">
 <div id="main">
 <h2>Функции системы</h2>
 <ul>
-<li><a href="#">Сотрудники</a>
-<li><a href="#">Должности</a>
+<li><a href="/Web_1/employee">Сотрудники</a>
+<li><a href="/Web_1/region">Регионы</a>
+<li><a href="/Web_1/territory">Территории</a>
+<li><a href="/Web_1/employeesterritory">Переназначение сотрудников по облостям</a>
 </ul>
 </div>
 <jsp:include page="../jspf/footer.jsp" />
